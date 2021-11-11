@@ -3,6 +3,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Пример веб-страницы</title>
   <style>
+   .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+    }
+
+    .button {
+        position: absolute;
+        top: 50%;
+        box-shadow: 0px 0px 40px #888888;
+    }
    * {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -25,8 +36,8 @@
   <video autoplay muted id="myVideo">
    <source src="Marvel.mp4" type="video/mp4">
   </video>
-  <div style="width:300px;height:200px;display:flex;justify-content:center;align-items:center;">
-   <a href="https://atuin.ru/blog/kruglaya-knopka-s-tenyu-na-css/"<div>Кнопка</div></a>
+  <div class="wrapper">
+   <div class="button">Button</div>
   </div>
  </body>
 </html>
