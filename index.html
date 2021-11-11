@@ -19,6 +19,13 @@
     animation-delay: 6s; /* Задержка перед началом */
     }
    
+   .scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+   }
+   
    @keyframes show{
    0%{
    opacity:0;
@@ -54,7 +61,7 @@
   </style>
  </head>
  <body>
-  <video playsinline autoplay muted id="myVideo">
+  <video playsinline autoplay muted id="myVideo" class="scale">
    <source src="Marvel.mp4" type="video/mp4">
    <source src="Marvel.webm" type="video/webm">
   </video>
