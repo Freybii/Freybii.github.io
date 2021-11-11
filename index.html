@@ -25,7 +25,14 @@
    .scale:hover {
     transform: scale(1.1); /* Увеличиваем масштаб */
    }
-   
+   .clickable {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;     
+  z-index: 1;
+}
    @keyframes show{
    0%{
    opacity:0;
@@ -57,6 +64,6 @@
    <source src="Marvel.mp4" type="video/mp4">
    <source src="Marvel.webm" type="video/webm">
   </video>
-  <a href="https://www.marvel.com/"><div id="wrapper" class="scale"/></a>
+  <div id="wrapper" class="scale"><a href="https://www.marvel.com/"><span class="clickable"></span></a></div>
  </body>
 </html>
