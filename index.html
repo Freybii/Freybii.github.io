@@ -12,7 +12,21 @@
     box-shadow: 0px 0px 70px #888888;
     border: 2px solid #888888;
     border-radius: 50px 20px;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 6s; /* Задержка перед началом */
     }
+   
+   @keyframes show{
+   0%{
+   opacity:0;
+   }
+   100% {
+   opacity:1;
+   }
+   }
 
     .button {
         position: absolute;
