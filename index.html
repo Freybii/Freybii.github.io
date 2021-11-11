@@ -2,11 +2,19 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Пример веб-страницы</title>
+  <style>
+   #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+   }
+  </style>
  </head>
  <body>
-  <h1>Заголовок</h1>
-  <!-- Комментарий -->
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
+  <video autoplay muted loop id="myVideo">
+   <source src="Marvel.mp4" type="video/mp4">
+  </video>
  </body>
 </html>
